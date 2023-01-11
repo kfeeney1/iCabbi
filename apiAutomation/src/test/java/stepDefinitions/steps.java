@@ -33,16 +33,13 @@ public class steps {
     public void iCallGetOnUsersFor(String user) {
         String requestURL = "https://reqres.in/api/users/" + user;
 
-        System.out.println(requestURL);
-
         Response response = given()
                 .get(requestURL)
                 .then()
                 .extract().response();
 
         setReturnedStatusCode(response.statusCode());
-
-        returnedID = response.path("data.id").toString();
+        setReturnedID(response.path("data.id").toString());
     }
 
     @Then("I will be returned a status code {string}")
