@@ -1,4 +1,4 @@
-# apiAutomation
+# iCabbi QA Automation Tech Challenge
 
 <p>To run tests, run TestRunner</p>
 
