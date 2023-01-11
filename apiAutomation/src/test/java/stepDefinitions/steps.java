@@ -52,7 +52,7 @@ public class steps {
         Assert.assertEquals(expectedID, returnedID);
     }
 
-    @Given("I create a user name {string} and Job {string}")
+    @Given("I create a user with name {string} and Job {string}")
     public void iCreateAUserNameAndJob(String name, String job) {
         String requestURL = "https://reqres.in/api/users/";
 
